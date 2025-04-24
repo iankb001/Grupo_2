@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(205, 183, 162);
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(163, 168, 101);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    display: inline-block;
+}
+
+header .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(163, 168, 101);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    border: 2px solid rgb(0, 0, 0); /* Borda preta */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .button:hover {
+    background-color: rgb(205, 183, 162);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin-top: 2rem;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+}
+
+section .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(163, 168, 101);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    border: 2px solid rgb(0, 0, 0); /* Borda preta */
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section .button:hover {
+    background-color: rgb(205, 183, 162);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+footer .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(163, 168, 101);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    border: 2px solid rgb(0, 0, 0); /* Borda preta */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer .button:hover {
+    background-color: rgb(205, 183, 162);
+    color: rgb(255, 255, 255);
+}
