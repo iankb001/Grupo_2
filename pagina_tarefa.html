@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Tarefa</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="pagina_tarefa.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="index.html" class="botao-voltar" aria-label="Voltar para tela inicial">&#8592;</a>
+      <h1 class="titulo">Nova Tarefa</h1>
+    </header>
+
+    <main class="conteudo-principal">
+      <section class="grupo-opcao">
+        <h2>Selecione a dificuldade da tarefa</h2>
+        <div class="botoes" id="grupo-dificuldade">
+          <button class="botao-opcao" data-grupo="dificuldade">fácil</button>
+          <button class="botao-opcao" data-grupo="dificuldade">médio</button>
+          <button class="botao-opcao" data-grupo="dificuldade">difícil</button>
+        </div>
+      </section>
+
+      <section class="grupo-descricao">
+        <h2>Dê uma breve descrição da tarefa</h2>
+        <p class="opcional-texto">(opcional)</p>
+        <textarea placeholder="Digite aqui..." class="campo-descricao" rows="4"></textarea>
+      </section>
+
+      <section class="grupo-opcao">
+        <h2>O prazo desta tarefa é:</h2>
+        <div class="botoes" id="grupo-prazo">
+          <button class="botao-opcao" data-grupo="prazo">curto</button>
+          <button class="botao-opcao" data-grupo="prazo">médio</button>
+          <button class="botao-opcao" data-grupo="prazo">longo</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="barra-inferior">
+      <a href="index.html" class="botao-salvar">Salvar tarefa.</a>
+    </footer>
+
+    <script src="pagina_tarefa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="popup_mais.css" />
+  </head>
+  <body>
+
+    <!-- Pop-up do botão "+" -->
+    <div id="popup_mais" class="popup-mais escondido">
+      <div class="conteudo-popup-mais">
+        <button class="opcao">Novo evento</button>
+        <button onclick="window.location.href='pagina_tarefa.html'" class="opcao">Nova tarefa</button>
+        <button class="opcao">Novo hábito</button>
+      </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="top-bar">
+      <a href="#" class="menu-btn" aria-label="Abrir menu">&#9776;</a>
+      <nav class="weekdays">
+        <a href="#" class="day"><span>S</span><strong>21</strong></a>
+        <a href="#" class="day"><span>M</span><strong>22</strong></a>
+        <a href="#" class="day"><span>T</span><strong>23</strong></a>
+        <a href="#" class="day active"><span>W</span><strong>24</strong></a>
+        <a href="#" class="day"><span>T</span><strong>25</strong></a>
+        <a href="#" class="day"><span>F</span><strong>26</strong></a>
+        <a href="#" class="day"><span>S</span><strong>27</strong></a>
+      </nav>
+      <div class="modes">
+        <button class="mode light" aria-label="modo claro"></button>
+        <button class="mode dark" aria-label="modo escuro"></button>
+      </div>
+    </header>
+
+    <main class="conteudo-analise">
+      <section class="grafico">
+        <h2>Relação de tarefas por dia</h2>
+        <img src="https://fakeimg.pl/400x200" alt="Gráfico de linha" />
+      </section>
+
+      <section class="grafico">
+        <h2>Relação de tempo por setor de foco</h2>
+        <img src="https://fakeimg.pl/400x200" alt="Gráfico de pizza" />
+      </section>
+    </main>
+
+    <button class="add-btn" aria-label="adicionar">+</button>
+
+    <!-- Bottom bar -->
+    <footer class="bottom-bar">
+      <nav>
+        <a href="index.html">Schedule<br /><small>(no icon yet)</small></a>
+        <a href="#">Tasks<br /><small>(no icon yet)</small></a>
+        <a href="#">Analysis<br /><small>(no icon yet)</small></a>
+      </nav>
+    </footer>
+
+    <!-- Pop-up do menu hambúrguer -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <img src="https://fakeimg.pl/100x100" alt="foto do usuário" class="user-photo" />
+        <p class="username">nome_de_usuario</p>
+        <div class="popup-box">
+          <strong>Aviso!</strong><br />
+          Aqui ficam possíveis sugestões de hobbies e outros tipos de atividades que combinam com o seu perfil
+        </div>
+        <button class="close-popup">✖</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+    <script src="popup_mais.js"></script>
+  </body>
+</html>

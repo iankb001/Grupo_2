@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Semanal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popup_mais.css">
+  </head>
+  <body>
+
+    <!-- Pop-up do botão "+" -->
+    <div id="popup_mais" class="popup-mais escondido">
+        <div class="conteudo-popup-mais">
+            <button class="opcao">Novo evento</button>
+            <button class="opcao" onclick="window.location.href='pagina_tarefa.html'">Nova tarefa</button>
+            <button class="opcao">Novo hábito</button>
+        </div>
+    </div>
+
+
+    <header class="top-bar">
+      <a href="#" class="menu-btn">&#9776;</a>
+      <nav class="weekdays">
+        <a href="#" class="day"><span>S</span><strong>21</strong></a>
+        <a href="#" class="day"><span>M</span><strong>22</strong></a>
+        <a href="#" class="day"><span>T</span><strong>23</strong></a>
+        <a href="#" class="day active"><span>W</span><strong>24</strong></a>
+        <a href="#" class="day"><span>T</span><strong>25</strong></a>
+        <a href="#" class="day"><span>F</span><strong>26</strong></a>
+        <a href="#" class="day"><span>S</span><strong>27</strong></a>
+      </nav>
+      <div class="modes">
+        <button class="mode light" aria-label="modo claro"></button>
+        <button class="mode dark" aria-label="modo escuro"></button>
+      </div>
+    </header>
+
+    <main class="schedule">
+      <section class="day-block">
+        <h2 class="date">24.04</h2>
+        <article class="event">
+          <h3>Reunião inaugural - Trainees</h3>
+          <p>9:00 - 10:30</p>
+        </article>
+        <article class="event">
+          <h3>Capacitação de SWOT - Trainees</h3>
+          <p>12:00 - 13:30</p>
+        </article>
+        <article class="event">
+          <h3>Almoço com a Madá</h3>
+          <p>13:50 - 14:30</p>
+        </article>
+      </section>
+
+      <section class="day-block">
+        <h2 class="date">25.04</h2>
+        <article class="event">
+          <h3>Sprint (Projeto Congo)</h3>
+          <p>9:00 - 9:30</p>
+        </article>
+        <article class="event">
+          <h3>Filmagem dos cases de sucesso</h3>
+          <p>10:20 - 12:30</p>
+        </article>
+      </section>
+
+      <section class="day-block">
+        <h2 class="date">26.04</h2>
+        <article class="event">
+          <h3>Alocação Trainee</h3>
+          <p>9:00 - 9:30</p>
+        </article>
+        <article class="event">
+          <h3>Filmagem dos cases de sucesso (Parte 2)</h3>
+          <p>11:20 - 12:30</p>
+        </article>
+      </section>
+
+      <section class="day-block">
+        <h2 class="date">27.04</h2>
+        <article class="event">
+          <h3>Alocação Trainee</h3>
+          <p>9:00 - 9:30</p>
+        </article>
+        <article class="event">
+          <h3>Filmagem dos cases de sucesso (Parte 2)</h3>
+          <p>11:20 - 12:30</p>
+        </article>
+      </section>
+    </main>
+
+    <button class="add-btn" aria-label="adicionar evento">+</button>
+
+    <footer class="bottom-bar">
+      <nav>
+        <a href="#">Schedule<br /><small>(no icon yet)</small></a>
+        <a href="#">Tasks<br /><small>(no icon yet)</small></a>
+        <a href="pagina_analise.html">Analysis<br /><small>(no icon yet)</small></a>
+      </nav>
+    </footer>
+
+    <!-- Pop-up do menu hambúrguer -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <img src="https://fakeimg.pl/100x100" alt="foto do usuário" class="user-photo">
+        <p class="username">nome_de_usuario</p>
+        <div class="popup-box">
+          <strong>Aviso!</strong><br>
+          Aqui ficam possíveis sugestões de hobbies e outros tipos de atividades que combinam com o seu perfil
+        </div>
+        <button class="close-popup">✖</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+    <script src="popup_mais.js"></script>
+  </body>
+</html>

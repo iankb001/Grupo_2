@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0e9de;
+  overflow-x: hidden;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #cdd1aa;
+  color: #4d5034;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #bfc89b;
+  border-top: 1px solid #a0a083;
+  padding: 1rem 0;
+}
+
+.bottom-bar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bottom-bar a {
+  color: #4d5034;
+  text-decoration: none;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.menu-btn {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.weekdays {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.6rem;
+  background: #cdd1aa;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  color: #4d5034;
+  min-width: 2rem;
+  text-decoration: none;
+}
+
+.day strong {
+  font-size: 0.8rem;
+}
+
+.day.active {
+  background: #4d5034;
+  color: white;
+}
+
+.modes button {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.mode.light {
+  background: #e0e0d1;
+}
+
+.mode.dark {
+  background: #333;
+}
+
+.schedule {
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.day-block {
+  margin-bottom: 1.5rem;
+}
+
+.date {
+  font-weight: bold;
+  padding: 1rem 0 0.5rem;
+  border-top: 1px solid #999;
+  color: #4d5034;
+}
+
+.event {
+  background: #7c5c3b;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: white;
+  box-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #6ca342;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}

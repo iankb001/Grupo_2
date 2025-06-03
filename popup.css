@@ -1,0 +1,59 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background-color: #c5bb94;
+  width: 18rem;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.user-photo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.popup-box {
+  background-color: #ede5cc;
+  padding: 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.close-popup {
+  background: #ff4d4d;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}

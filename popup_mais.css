@@ -1,0 +1,40 @@
+.popup-mais {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.5rem;
+  background-color: #d6d097;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  z-index: 15;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-mais.escondido {
+  display: none;
+}
+
+.conteudo-popup-mais {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.conteudo-popup-mais .opcao {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-top: 1px solid #b1aa6d;
+}
+
+.conteudo-popup-mais .opcao:first-child {
+  border-top: none;
+}
